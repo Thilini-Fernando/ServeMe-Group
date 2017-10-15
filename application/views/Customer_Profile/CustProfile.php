@@ -3,6 +3,8 @@
 	<div id="container">
 		<center>
 			<h1><b>Customer Profile</b></h1>
+    <?php echo $this->session->userdata('user_id');?>
+
 
 			
 		</center>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 	if(!($this->session->userdata('loggedIn'))){
 		redirect('HomeCont/loadLogin');
 	}
@@ -38,7 +38,7 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li><a href="<?php echo base_url(); ?>">Profile<span class="sr-only">(current)</span></a></li>
-	        <li><a href="<?php echo base_url(); ?>">Add new order</a></li>	              
+	        <li><a href="<?php echo base_url('index.php/CustomerCont/loadNewOrder'); ?>">Add new order</a></li>
 	        
 	      </ul>
 	      

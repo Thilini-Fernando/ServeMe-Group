@@ -13,5 +13,6 @@ class HomeCont extends CI_Controller{
 		$this->load->view('RegView');
 	}
 
+
 }
 

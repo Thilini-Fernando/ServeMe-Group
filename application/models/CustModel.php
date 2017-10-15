@@ -8,6 +8,7 @@ class CustModel extends CI_Model{
 	function regCustomer(){
 
 		$data = array(
+
 			'cust_fname' => $this->input->post('fnm',TRUE),
 			'cust_lname' => $this->input->post('lnm', TRUE),
 			'address' => $this->input->post('addr', TRUE),
@@ -37,4 +38,21 @@ class CustModel extends CI_Model{
 		}
 
 	}
+
+    function AddNewOrderCustomer(){
+
+        $data = array(
+            'taken_date' => $this->input->post('tdate',TRUE),
+            'due_date' => $this->input->post('ddate', TRUE),
+            'price' => $this->input->post('price', TRUE),
+
+        );
+        $this->db->get('customer');
+        //$customer_id=$this->session->set_userdata('user_id');
+
+
+
+        return $this->db->insert('orders',$data);
+
+    }
 }
