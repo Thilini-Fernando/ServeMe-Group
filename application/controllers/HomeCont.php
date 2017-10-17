@@ -13,6 +13,10 @@ class HomeCont extends CI_Controller{
 		$this->load->view('RegView');
 	}
 
+	public function loadAdminLogin(){
+		$this->load->view('AdmnLogView');
+	}
+
 
 }
 

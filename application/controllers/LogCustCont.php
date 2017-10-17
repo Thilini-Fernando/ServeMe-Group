@@ -3,7 +3,7 @@
 class LogCustCont extends CI_Controller
 {
 	
-	function logCust()
+	public function logCust()
 	{		
 		$this->form_validation->set_rules('eml', 'email', 'required|valid_email');
 		$this->form_validation->set_rules('pwd', 'Password', 'required');

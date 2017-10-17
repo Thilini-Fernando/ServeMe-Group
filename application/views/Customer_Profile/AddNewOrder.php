@@ -9,20 +9,23 @@
     <?php echo form_open('AddNewOrder/NewOrder') ?>
 
 
-        <div class="form-group">
+        <!--div class="form-group">
             <label for="newOrder">Taken date</label>
             <input type="taken date" class="form-control" id="InputTakenDate" placeholder="Today" name="tdate">
-        </div>
+        </div-->
+
+                
         <div class="form-group">
             <label for="InputDueDate">Due date</label>
             <input type="due date" class="form-control" id="InputDueDate" placeholder="Due date" name="ddate">
         </div>
-        <div class="form-group">
+        <!--div class="form-group">
             <label for="InputPrice">Price</label>
             <input type="price" class="form-control" id="InputPrice" placeholder="Price" name="price">
-        </div>
+        </div-->
 
-    <button type="submit" class="btn btn-default">Submit</button>
+
+    <button type="submit" class="btn btn-default">Order now</button>
     <?php echo form_close(); ?>
 
 </div>

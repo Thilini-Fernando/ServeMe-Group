@@ -5,9 +5,9 @@ class AddNewOrder extends  CI_Controller{
     public function NewOrder()
     {
         {
-            $this->form_validation->set_rules('tdate', 'Taken Date', 'required');
+            //$this->form_validation->set_rules('tdate', 'Taken Date', 'required');
             $this->form_validation->set_rules('ddate', 'Due Date', 'required');
-            $this->form_validation->set_rules('price', 'Price', 'required');
+            //$this->form_validation->set_rules('price', 'Price', 'required');
     }
         if ($this->form_validation->run()==FALSE){
             //echo 'validation failed';

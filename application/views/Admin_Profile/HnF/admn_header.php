@@ -1,13 +1,13 @@
 <?php
 	if(!($this->session->userdata('loggedIn'))){
-		redirect('HomeCont/loadLogin');
+		redirect('HomeCont/loadAdminLogin');
 	}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Customer Login</title>
+	<title>Admin page</title>
 
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -37,9 +37,10 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <!--li><a href="<?php echo base_url('index.php/CustomerCont/viewProfile'); ?>">My Profile<span class="sr-only">(current)</span></a></li-->
-	        <li><a href="<?php echo base_url('index.php/CustomerCont/loadNewOrder'); ?>">Add new order</a></li>
-	        <li><a href="#">Change/View Orders</a></li>
+	        <!--li><a href="<?php echo base_url('index.php/AdminCont/viewProfile'); ?>">My Profile<span class="sr-only">(current)</span></a></li-->
+	        <li><a href="<?php echo base_url('index.php/AdminCont/addNewAdmin') ?>">Admin Registration</a></li>
+	        <li><a href="#">Manage food items</a></li>
+	        <li><a href="#">Manage employees</a></li>
 	        
 	      </ul>
 	      
@@ -48,9 +49,9 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $this->session->userdata('fname')." ".$this->session->userdata('lname') ?><span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="<?php echo base_url('index.php/CustomerCont/viewProfile'); ?>">View Profile</a></li>
+	            <li><a href="<?php echo base_url('index.php/AdminCont/viewProfile'); ?>">View Profile</a></li>
 	            <li><a href="#">Edit Profile</a></li>
-	            <li><a href="<?php echo base_url('index.php/LogCustCont/logoutUser') ?>">logout</a></li>
+	            <li><a href="<?php echo base_url('index.php/LogAdmnCont/logoutUser') ?>">logout</a></li>
 	          </ul>
 	        </li>
 	      </ul>

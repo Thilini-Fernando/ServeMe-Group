@@ -44,17 +44,17 @@
 	      
 	      <ul class="nav navbar-nav navbar-right">
 
-	        <li><a href="<?php echo base_url('index.php/HomeCont/loadLogin'); ?>">Login</a></li>
-	        <li><a href="<?php echo base_url('index.php/HomeCont/loadReg'); ?>">Customer Registration</a></li>
+	      	<li><a href="<?php echo base_url('index.php/HomeCont/loadReg'); ?>">Customer Registration</a></li>        
 
-	        <!--li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">View Profile</a></li>
-	            <li><a href="#">Edit Profile</a></li>
-	            <li><a href="#">logout</a></li>
+	            <li><a href="<?php echo base_url('index.php/HomeCont/loadLogin'); ?>">Customer Login</a></li>
+	            <li><a href="<?php echo base_url('index.php/HomeCont/loadAdminLogin'); ?>">Admin login</a></li>
+	            
 	          </ul>
-	        </li-->
+	        </li>        
+
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
