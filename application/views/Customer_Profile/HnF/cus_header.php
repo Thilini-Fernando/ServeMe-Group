@@ -49,7 +49,7 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $this->session->userdata('fname')." ".$this->session->userdata('lname') ?><span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="<?php echo base_url('index.php/CustomerCont/viewProfile'); ?>">View Profile</a></li>
-	            <li><a href="#">Edit Profile</a></li>
+	            <li><a href="<?php echo base_url('index.php/EditCustCont/editCust'); ?>">Edit Profile</a></li>
 	            <li><a href="<?php echo base_url('index.php/LogCustCont/logoutUser') ?>">logout</a></li>
 	          </ul>
 	        </li>

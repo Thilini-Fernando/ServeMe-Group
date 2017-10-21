@@ -41,24 +41,33 @@ class CustModel extends CI_Model{
 
     function AddNewOrderCustomer(){
 
+            $customer_id =1;
     		$cur_date = date('Y-m-d');
-    		//echo 'Current date: '.$cur_date;    		
+    		//echo 'Current date: '.$cur_date;
+            $customer_id = $this->session->userdata('user_id');
+           // echo $customer_id;
 
-        $data = array(
-            //'taken_date' => $this->input->post('tdate',TRUE),
-            'due_date' => $this->input->post('ddate', TRUE),
+            $data = array(
             'taken_date' => $cur_date,
+            'cust_id'=> $customer_id,
+            'due_date' => $this->input->post('ddate', TRUE),
+
+           // 'taken_date' => $cur_date,
             
 
             //'price' => $this->input->post('price', TRUE),
 
         );
-        $this->db->get('customer');
-        //$customer_id=$this->session->set_userdata('user_id');
+        //$this->db->get('customer');
+
 
 
 
         return $this->db->insert('orders',$data);
 
     }
+}
+
+function EditCustomer(){
+
 }
