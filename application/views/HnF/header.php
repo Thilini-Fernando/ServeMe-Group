@@ -15,6 +15,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
 
 </head>
 <body>
@@ -22,7 +23,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	
 	<nav class="navbar navbar-default">
-	  	<div class="container-fluid">
+	  	<div class="container-fluid" style=" background-color: lightgrey">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">

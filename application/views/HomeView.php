@@ -2,12 +2,20 @@
 
 	<div id="container">
 		<center>
-			<h1><b>Three Star Bakers</b></h1>
+			<!--h1 align="left">
+
+				This is our login
+				
+			</h1-->
+
+			<h1>
+				<img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg">
+			</h1>
 
 			<hr>
 
 			<div id='body'>
-				This is an online platform which you can get our service easily..
+				
 			</div>
 		</center>
 	</div>
