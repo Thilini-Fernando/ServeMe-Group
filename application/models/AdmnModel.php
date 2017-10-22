@@ -26,7 +26,8 @@ class AdmnModel extends CI_Model
 	}
 
 	public function regAdmin1(){
-		
+
+		//insrt data set to employee table		
 
 		$data1 = array(
 			
@@ -48,6 +49,8 @@ class AdmnModel extends CI_Model
 
 	public function regAdmin2(){
 
+		//get data from employee table
+
 		$email = $this->input->post('eml', TRUE);
 		$fname = $this->input->post('fnm', TRUE);
 		$lname = $this->input->post('lnm', TRUE);
@@ -56,7 +59,6 @@ class AdmnModel extends CI_Model
 		$this->db->where('emp_fname', $fname);
 		$this->db->where('emp_lname', $lname);
 		
-		//$this->db->where('masterkey', $mstrkey);
 		$respnd = $this->db->get('employee');
 
 		if ($respnd->num_rows()==1) {
@@ -64,13 +66,15 @@ class AdmnModel extends CI_Model
 			
 		}		
 
+		//fill data to system_admin table
+
 		$data2 = array(
 
 			'emp_id' => $emp_det->emp_id,
 			'admin_fname' => $fname,
 			'admin_lname' => $lname,
-			'address' => $this->input->post('addr', TRUE),
-			'contact_no' => $this->input->post('cntct', TRUE),
+			//'address' => $this->input->post('addr', TRUE),
+			//'contact_no' => $this->input->post('cntct', TRUE),
 			'email' => $this->input->post('eml', TRUE),		
 			'password' => $this->input->post('pwd', TRUE),
 			'masterkey' => '19941114'
