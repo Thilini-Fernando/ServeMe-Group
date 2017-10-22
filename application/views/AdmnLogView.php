@@ -38,7 +38,10 @@
 
 			</div>
 
+			
+
 		<?php echo form_close(); ?>
+		<br>
 	</div>
 
 <?php include 'HnF/footer.php' ?>
