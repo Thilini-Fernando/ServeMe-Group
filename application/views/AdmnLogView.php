@@ -33,6 +33,9 @@
 			<button type="submit" class="btn btn-default">Login</button>
 
 		<?php echo form_close(); ?>
+
+		<br>
+		
 	</div>
 
 <?php include 'HnF/footer.php' ?>
