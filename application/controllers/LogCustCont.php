@@ -18,7 +18,7 @@ class LogCustCont extends CI_Controller
 			$this->load->model('CustModel');
 			$isLog = $this->CustModel->logCustomer();
 
-			if ($isLog!=FALSE) {
+			if ($isLog) {
 				//start of session
 
 				$user_det = array(

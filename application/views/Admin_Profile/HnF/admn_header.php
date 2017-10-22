@@ -41,8 +41,6 @@
 	        <li><a href="<?php echo base_url('index.php/AdminCont/addNewAdmin') ?>">Admin Registration</a></li>
 	        <li><a href="#">Manage food items</a></li>
 	        <li><a href="#">Manage employees</a></li>
-	        <li><a href="#">Manage orders</a></li>
-
 	        
 	      </ul>
 	      

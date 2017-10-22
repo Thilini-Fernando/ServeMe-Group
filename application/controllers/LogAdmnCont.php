@@ -16,7 +16,7 @@ class LogAdmnCont extends CI_Controller{
 			$this->load->model('AdmnModel');
 			$islogged = $this->AdmnModel->loginAdmin();
 
-			if ($islogged!=FALSE) {
+			if ($islogged) {
 				//start admin session
 
 				$admn_det = array(

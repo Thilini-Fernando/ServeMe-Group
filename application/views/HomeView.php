@@ -1,24 +1,15 @@
 <?php include 'HnF/header.php' ?>
 
-
-	<div class="container">
+	<div id="container">
 		<center>
-			
-			<h1>
-				<img src="<?php echo base_url(); ?>assets/myOne.jpg" alt = "Test image"/>
-			</h1>
+			<h1><b>Three Star Bakers</b></h1>
+
 			<hr>
 
-			<br>
 			<div id='body'>
-				Welcome to our web page..
-				This is our online service..
-			</div>	
-			<br>
+				This is an online platform which you can get our service easily..
+			</div>
 		</center>
 	</div>
-	<br>
-	
-		
 
 <?php include 'HnF/footer.php' ?>
