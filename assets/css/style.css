@@ -2,6 +2,7 @@ body{
 	background-color:gold;
 }
 h1{
+<<<<<<< HEAD
 	background-color:transparent;
 	color: black;
 	/*border-color: transparent;*/
@@ -23,13 +24,38 @@ h1{
   
   
 }
+=======
+	color :darkblue;
+	background-color: white;
+}
+.container{
+	background-color:darkgrey;
+	width:600px;
+
+
+}
+#login{
+	background-color:darkgrey;
+	width:600px;
+	height: 350px;
+}
+
+body{
+	background-size: cover;
+	background-image: url("../images/background2.jpg");
+>>>>>>> c16006693b006ace7b2664178192bc56d5b26a40
 
 button{
 	font-weight: bold;
 	text-align: center;
 
+<<<<<<< HEAD
 	text-decoration-color: grey;
 	border-color: lightblue;
 	white-space: nowrap;
 	vertical-align: middle;
 }
+=======
+
+}
+>>>>>>> c16006693b006ace7b2664178192bc56d5b26a40

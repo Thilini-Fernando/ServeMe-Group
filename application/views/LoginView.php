@@ -1,8 +1,12 @@
+
 <?php include 'HnF/header.php' ?>
 
-	<div class="container">
+
+	<div class="container" id="login">
+
 		<center>
-			<h1><b>Login Forum</b></h1>
+			<h1><b>Login Form</b></h1>
+
 		</center>
 
 		<?php if($this->session->flashdata('msg2')){
