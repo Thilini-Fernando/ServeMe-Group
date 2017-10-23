@@ -7,15 +7,25 @@
 }
 */
 h1{
-	color :red;
+	color :darkblue;
 	background-color: white;
 }
 .container{
-	background-color: grey;
+	background-color:darkgrey;
+	width:600px;
+
+
+}
+#login{
+	background-color:darkgrey;
+	width:600px;
+	height: 350px;
 }
 
 body{
-	background-color: yellow;
+	background-size: cover;
+	background-image: url("../images/background2.jpg");
+
 
 
 }
