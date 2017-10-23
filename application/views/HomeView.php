@@ -1,6 +1,6 @@
 <?php include 'HnF/header.php' ?>
 
-	<div id="container">
+	<div class="container">
 		<center>
 			<!--h1 align="left">
 
@@ -11,7 +11,15 @@
 			<h1>
 				<img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg">
 			</h1>
-
+			
+			<!--table>
+				<tr >
+					<td>Our symbol</td>
+					<td>
+						<img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg">
+					</td>
+				</tr>
+			</table-->
 			<hr>
 
 			<div id='body'>

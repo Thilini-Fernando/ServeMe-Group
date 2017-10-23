@@ -15,7 +15,7 @@
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('RegAdminCont/regAdmin'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">First name</label>
@@ -51,17 +51,23 @@
 				    <label for="exampleInputPassword1">Confirm Password</label>
 				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password again" name="pwd_a">
 				</div>			 
-
-				<br> 
-				  
-				<button type="submit" class="btn btn-default">Submit Form</button>
+				
+				<div>
+					<button type="submit" class="btn btn-default">Submit Form</button>
+				</div>			
 
 				<br>
 
 			</div>
+
+			
 			
 		<?php echo form_close(); ?>	
+
+		
 		
 	</div>
+
+	<br>
 
 <?php include 'HnF/admn_footer.php' ?>

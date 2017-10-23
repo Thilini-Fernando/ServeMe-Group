@@ -14,7 +14,7 @@
 
 		<?php echo form_open('LogCustCont/logCust'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
@@ -24,16 +24,16 @@
 				    <label for="exampleInputPassword1">Password</label>
 				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pwd">
 				</div>
-
-				<br> 
 				  
-				<button type="submit" class="btn btn-default">Login</button>
+				<div>
+					<button type="submit" class="btn btn-default">Login</button>
+				</div>
 
 				<br>
 
 			</div>
 
-
+			<br>
 		<?php echo form_close(); ?>
 	</div>
 

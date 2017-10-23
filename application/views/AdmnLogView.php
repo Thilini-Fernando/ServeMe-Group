@@ -14,7 +14,7 @@
 
 		<?php echo form_open('LogAdmnCont/logAdmn'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
@@ -31,9 +31,9 @@
 				</div>
 
 				<br> 
-				  
-				<button type="submit" class="btn btn-default">Login</button>
-
+				<div> 
+					<button type="submit" class="btn btn-default">Login</button>
+				</div>
 				<br>
 
 			</div>
