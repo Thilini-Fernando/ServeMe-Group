@@ -40,8 +40,8 @@
 	      <ul class="nav navbar-nav">
 	        <!--li><a href="<?php echo base_url('index.php/AdminCont/viewProfile'); ?>">My Profile<span class="sr-only">(current)</span></a></li-->
 	        <li><a href="<?php echo base_url('index.php/AdminCont/addNewAdmin') ?>">Admin Registration</a></li>
-	        <li><a href="#">Manage food items</a></li>
-	        <li><a href="#">Manage employees</a></li>
+	        <li><a href="<?php echo base_url('index.php/AdminCont/manageFood') ?>">Manage food items</a></li>
+	        <li><a href="<?php echo base_url('index.php/AdminCont/manageEmp') ?>">Manage employees</a></li>
 	        
 	      </ul>
 	      

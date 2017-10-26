@@ -8,7 +8,7 @@ class RegCustCont extends CI_Controller
 		$this->form_validation->set_rules('fnm', 'First name', 'required');
 		$this->form_validation->set_rules('lnm', 'Last name', 'required');
 		$this->form_validation->set_rules('addr', 'Address', 'required');
-		$this->form_validation->set_rules('cntct', 'Contact no', 'required');
+		$this->form_validation->set_rules('cntct', 'Contact no', 'required|max_length[10]|min_length[10]');
 		$this->form_validation->set_rules('eml', 'email', 'required|valid_email|is_unique[customer.email]');
 		$this->form_validation->set_rules('pwd', 'Password', 'required|min_length[4]');
 		$this->form_validation->set_rules('pwd_a', 'Password again', 'required|matches[pwd]');
@@ -23,7 +23,7 @@ class RegCustCont extends CI_Controller
 			$isReg = $this->CustModel->regCustomer();
 
 			if ($isReg) {
-                $this->session->set_flashdata('msg','Registration was succesful`    `                                                                                                                               `   ');
+                $this->session->set_flashdata('msg','Registration was succesful');
 				redirect('HomeCont/loadReg');
 
 

@@ -9,8 +9,8 @@ class AdmnModel extends CI_Model
 	function loginAdmin()
 	{
 		$email = $this->input->post('eml');
-		$password = $this->input->post('pwd');
-		$mstrkey = $this->input->post('mstrk');
+		$password = sha1($this->input->post('pwd'));
+		$mstrkey = sha1($this->input->post('mstrk'));
 
 		$this->db->where('email', $email);
 		$this->db->where('password', $password);
@@ -55,8 +55,7 @@ class AdmnModel extends CI_Model
 		$this->db->where('email', $email);
 		$this->db->where('emp_fname', $fname);
 		$this->db->where('emp_lname', $lname);
-		
-		//$this->db->where('masterkey', $mstrkey);
+
 		$respnd = $this->db->get('employee');
 
 		if ($respnd->num_rows()==1) {
@@ -69,11 +68,9 @@ class AdmnModel extends CI_Model
 			'emp_id' => $emp_det->emp_id,
 			'admin_fname' => $fname,
 			'admin_lname' => $lname,
-			'address' => $this->input->post('addr', TRUE),
-			'contact_no' => $this->input->post('cntct', TRUE),
 			'email' => $this->input->post('eml', TRUE),		
-			'password' => $this->input->post('pwd', TRUE),
-			'masterkey' => '19941114'
+			'password' => sha1($this->input->post('pwd', TRUE)),
+			'masterkey' => sha1('19941114')
 		);
 		return $this->db->insert('system_admin',$data2);
 	}

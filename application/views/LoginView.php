@@ -1,8 +1,7 @@
-
 <?php include 'HnF/header.php' ?>
 
 
-	<div class="container" id="login">
+	<div class="container">
 
 		<center>
 			<h1><b>Login Form</b></h1>

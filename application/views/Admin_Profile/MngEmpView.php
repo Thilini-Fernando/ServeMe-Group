@@ -3,7 +3,7 @@
 	<div class="container">
 		
 		<h1><b>
-			<center>Admin Registration Form</center>
+			<center>Employee Registration Form</center>
 		</b></h1>
 
 		<?php if($this->session->flashdata('msg')){
@@ -13,7 +13,7 @@
 		<hr>				
 
 		<?php echo validation_errors(); ?>
-		<?php echo form_open('RegAdminCont/regAdmin'); ?>
+		<?php echo form_open('RegEmpCont/regEmp'); ?>
 
 			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
 
@@ -25,6 +25,10 @@
 				    <label for="exampleInputPassword1">Last name</label>
 				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="eg: Perera" name="lnm">
 				</div>
+				<!--div class="form-group">
+				    <label for="exampleInputPassword1">Position</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="eg: Delivery crew" name="pstn">
+				</div-->
 				<div class="form-group">
 					<label for="exampleInputEmail1">Address</label>
 				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="address" name="addr">
@@ -43,14 +47,12 @@
 				    <label for="exampleInputEmail1">Email address</label>
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="__@email.com" name="eml">
 				</div>
-				<div class="form-group">
-				    <label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pwd">
+
+				<div class="checkbox">
+					<label><input type="checkbox" name="dlvry">Selected for delivery crew</label>
 				</div>
-				<div class="form-group">
-				    <label for="exampleInputPassword1">Confirm Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password again" name="pwd_a">
-				</div>			 
+				
+						 
 				
 				<div>
 					<button type="submit" class="btn btn-default">Submit Form</button>
@@ -58,7 +60,9 @@
 
 				<br>
 
-			</div>		
+			</div>
+
+			
 			
 		<?php echo form_close(); ?>	
 
