@@ -14,7 +14,7 @@ class CustModel extends CI_Model{
 			'address' => $this->input->post('addr', TRUE),
 			'contact_no' => $this->input->post('cntct', TRUE),
 			'email' => $this->input->post('eml', TRUE),
-			'password' => $this->input->post('pwd', TRUE)
+			'password' => sha1($this->input->post('pwd', TRUE))
 		);
 		
 		return $this->db->insert('customer',$data);
@@ -24,7 +24,7 @@ class CustModel extends CI_Model{
 	function logCustomer(){
 
 		$email = $this->input->post('eml');
-		$password = $this->input->post('pwd');
+		$password = sha1($this->input->post('pwd'));
 
 		$this->db->where('email', $email);
 		$this->db->where('password', $password);
