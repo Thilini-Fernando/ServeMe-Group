@@ -15,23 +15,11 @@ class EditCustCont extends CI_Controller
             $this->load->view('Customer_Profile/EditProf');
 
         }else{
-
-
             $this->load->model('CustModel');
+            $isReg=$this->CustModel->EditCustomer();
+            //echo 'validated succesfully111';
 
-            $customer_id = $this->session->userdata('user_id');
-            $query= $this->db->get('customer'); //select all from customer table
-            $this->db->where('cust_id',$customer_id);
-            $rs=$query->row();
-//            $rslt=$this->db->where('cust_id', $customer_id);
-            if($rs){
-                echo 'aaa';
-
-
-                    $this->CustModel->EditCustomer();
-                    echo 'validated succesfully111';
-
-
+            if ($isReg!=false) {
                 $this->session->set_flashdata('msg','Edit was succesful');
                 redirect('CustomerCont/editCust');
 
@@ -40,6 +28,6 @@ class EditCustCont extends CI_Controller
                 $this->session->set_flashdata('msg','Edit was unsuccesful.. Try again later..');
                 redirect('CustomerCont/editCust');
             }
-        }}
-
+        }
+    }
 }

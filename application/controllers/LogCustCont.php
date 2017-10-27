@@ -22,7 +22,6 @@ class LogCustCont extends CI_Controller
 				//start of session
 
 				$user_det = array(
-					
 
 					'user_id'=>$isLog->cust_id,
 					'fname'=>$isLog->cust_fname,

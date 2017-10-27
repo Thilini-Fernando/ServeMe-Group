@@ -13,7 +13,8 @@
 		<hr>				
 
 		<?php echo validation_errors(); ?>
-		<?php echo form_open('RegCustCont/regCust'); ?>
+		<?php echo form_open('RegCustCont/regCust'); //Call the regCust funtion of RegCustCont controller
+		 ?>
 			
 			<div class="col-sm-8 col-sm-offset-2">
 				<div class="form-group">

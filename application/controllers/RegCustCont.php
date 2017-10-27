@@ -23,7 +23,7 @@ class RegCustCont extends CI_Controller
 			$isReg = $this->CustModel->regCustomer();
 
 			if ($isReg) {
-                $this->session->set_flashdata('msg','Registration was succesful`    `                                                                                                                               `   ');
+                $this->session->set_flashdata('msg','Registration was succesful');
 				redirect('HomeCont/loadReg');
 
 

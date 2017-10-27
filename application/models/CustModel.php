@@ -4,10 +4,12 @@
 * 
 */
 class CustModel extends CI_Model{
+//    public function __construct() {
+//        parent::__construct();
+//        $this->db = $this->load->database('default', true);
+//    }
 
-
-
-    function regCustomer(){
+	function regCustomer(){
 
 		$data = array(
 
@@ -70,18 +72,17 @@ class CustModel extends CI_Model{
     }
 }
 
-function EditCustomer()
-{
-//    $customer_id =1;
+function EditCustomer(){
+    //$customer_id =1;
 
-//    $customer_id = $this->session->userdata('user_id');
-//
-//    $rslt=$this->db->where('cust_id', $customer_id);
-//    if($rslt->num_rows()>0){
+    $customer_id = $this->session->userdata('user_id');
+
+    $rslt=$this->db->where('cust_id', $customer_id);
+    if($rslt){
 
     $data = array(
 
-        'cust_fname' => $this->input->post('fnm', TRUE),
+        'cust_fname' => $this->input->post('fnm',TRUE),
         'cust_lname' => $this->input->post('lnm', TRUE),
         'address' => $this->input->post('addr', TRUE),
         'contact_no' => $this->input->post('cntct', TRUE),
@@ -89,10 +90,11 @@ function EditCustomer()
         'password' => $this->input->post('pwd', TRUE)
 
     );
-     $this->db->update('customer', $data);
-//    return $result;
-//
-//}else{
-//    return false;
-//}}
+    $result= $this->db->update('customer',$data);
+    return $result;
+
+}
+else{   echo "false";
+            return false;
+        }
 }

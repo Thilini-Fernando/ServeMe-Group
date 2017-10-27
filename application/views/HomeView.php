@@ -2,12 +2,6 @@
 
 	<div class="container" id="home">
 		<center>
-			<!--h1 align="left">
-
-				This is our login
-				
-			</h1-->
-
 			<h1 >
 				<center><img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg"></center>
 			</h1>

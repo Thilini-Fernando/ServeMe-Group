@@ -16,7 +16,8 @@
 		<hr>
 		<?php echo validation_errors(); ?>
 
-		<?php echo form_open('LogCustCont/logCust'); ?>
+		<?php echo form_open('LogCustCont/logCust'); // Call the logCust function of LogCustCont
+		?>
 
 			<div class="col-sm-8 col-sm-offset-2">
 

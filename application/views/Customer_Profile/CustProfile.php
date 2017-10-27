@@ -2,13 +2,10 @@
     <div class="right">
     <div class="container" id="viewCust">
 
-
-
-
                     <?php
 
                     $cur_date = date('Y-m-d');
-                    echo 'Current date: '.$cur_date;
+                    echo 'Current date: '.$cur_date; //print current date
 
                     ?>
                     <center>
