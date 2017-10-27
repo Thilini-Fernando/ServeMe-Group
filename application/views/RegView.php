@@ -15,7 +15,7 @@
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('RegCustCont/regCust'); ?>
 			
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-8 col-sm-offset-2">
 				<div class="form-group">
 				    <label for="exampleInputEmail1">First name</label>
 			    	<input type="text" class="form-control" id="exampleInputEmail1" placeholder="eg: Nimal" name ="fnm">
@@ -47,7 +47,7 @@
 
 				<br> 
 				  
-				<button type="submit" class="btn btn-default">Submit Form</button>
+				<center><button type="submit" class="btn btn-default">Submit</button></center>
 
 				<br>
 

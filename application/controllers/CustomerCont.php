@@ -10,4 +10,7 @@ class CustomerCont extends CI_Controller
     public function loadNewOrder(){
         $this->load->view('Customer_Profile/AddNewOrder');
     }
+    public function editCust(){
+        $this->load->view('Customer_Profile/EditProf');
+    }
 }

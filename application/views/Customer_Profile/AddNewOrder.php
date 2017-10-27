@@ -1,6 +1,12 @@
 <?php include 'HnF/cus_header.php' ?>
 
-<div class="container">
+<div class="container " id="order">
+<?php
+
+$cur_date = date('Y-m-d');
+echo 'Current date: '.$cur_date;
+
+?>
     <h1>
         <center>Add your Order</center>
     </h1>
@@ -13,6 +19,7 @@
             <label for="newOrder">Taken date</label>
             <input type="taken date" class="form-control" id="InputTakenDate" placeholder="Today" name="tdate">
         </div-->
+    <div class="col-sm-8 col-sm-offset-2">
 
                 
         <div class="form-group">
@@ -25,7 +32,7 @@
         </div-->
 
 
-    <button type="submit" class="btn btn-default">Order now</button>
+   <center> <button type="submit" class="btn btn-default">Order now</button></center>
     <?php echo form_close(); ?>
 
 </div>

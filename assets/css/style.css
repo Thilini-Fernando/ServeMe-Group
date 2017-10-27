@@ -6,16 +6,68 @@
     background-color: #333;
 }
 */
+
+
 h1{
-	color :red;
-	background-color: white;
+	color :#117A65;
 }
+
+
+
 .container{
-	background-color: grey;
+	background-color: lightgray;
+	width:600px;
+}
+#home{
+	background-color: white;
+	width:1500px;
+}
+
+#admin_log{
+	width:600px;
+	height: 450px;
+}
+#login{
+	background-color:lightgray;
+	width:600px;
+	height: 400px;
+	background-blend-mode: screen;
+
+}
+#viewCust{
+
+	width:600px;
+	height: 400px;
 }
 
 body{
-	background-color: yellow;
+	background-size: cover;
+	background-image: url("../images/background2.jpg");
+}
+#order{
 
+	width:600px;
+	height: 400px;
+}
+.btn {
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: gray;
+	background-color: #4CAF50;
+	border: none;
+	box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color:#45B39D}
+
+.btn:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 
 }

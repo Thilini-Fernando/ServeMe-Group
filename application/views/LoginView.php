@@ -1,8 +1,12 @@
+
 <?php include 'HnF/header.php' ?>
 
-	<div class="container">
+
+	<div class="container" id="login">
+
 		<center>
-			<h1><b>Login Forum</b></h1>
+			<h1><b>Login Form</b></h1>
+
 		</center>
 
 		<?php if($this->session->flashdata('msg2')){
@@ -14,7 +18,7 @@
 
 		<?php echo form_open('LogCustCont/logCust'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-8 col-sm-offset-2">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
@@ -27,7 +31,7 @@
 
 				<br> 
 				  
-				<button type="submit" class="btn btn-default">Login</button>
+				<center><button type="submit" class="btn btn-default" >Login</button></center>
 
 				<br>
 

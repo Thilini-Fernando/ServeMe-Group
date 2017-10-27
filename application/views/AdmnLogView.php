@@ -1,6 +1,6 @@
 <?php include 'HnF/header.php' ?>
 
-	<div class="container">
+	<div class="container" id="admin_log">
 		<center>
 			<h1><b>Admin Login Forum</b></h1>
 		</center>
@@ -32,7 +32,7 @@
 
 				<br> 
 				  
-				<button type="submit" class="btn btn-default">Login</button>
+				<center><button type="submit" class="btn btn-default">Login</button></center>
 
 				<br>
 

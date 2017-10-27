@@ -1,6 +1,6 @@
 <?php include 'HnF/header.php' ?>
 
-	<div id="container">
+	<div class="container" id="home">
 		<center>
 			<!--h1 align="left">
 
@@ -8,8 +8,8 @@
 				
 			</h1-->
 
-			<h1>
-				<img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg">
+			<h1 >
+				<center><img src="<?php echo base_url(); ?>assets/images/mySystem_3.jpeg"></center>
 			</h1>
 
 			<hr>
