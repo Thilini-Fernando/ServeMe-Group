@@ -15,7 +15,7 @@
                         <h1><b>Customer Profile</b></h1>
                         <hr>
                         <table align="center">
-                            <tr><td width="40%"> <h4><?php echo  'First Name: <td>'.$this->session->userdata('fname');?></h4><br></td></tr>
+                            <tr><td width="60%"> <h4><?php echo  'First Name: <td>'.$this->session->userdata('fname');?></h4><br></td></tr>
                             <tr><td><h4><?php echo   'Last Name: <td > '.$this->session->userdata('lname');?></h4><br></td></tr>
                             <tr><td> <h4> <?php echo 'Address:<td> '.$this->session->userdata('address');?></h4><br></td></tr>
                             <tr><td> <h4> <?php echo 'Contact No:<td> '.$this->session->userdata('contact');?> </h4><br></td></tr>

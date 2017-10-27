@@ -1,61 +1,61 @@
-body{
-	background-color:gold;
-}
+/*body{*/
+	/*background-color:gold;*/
+/*}*/
 h1{
-<<<<<<< HEAD
+
 	background-color:transparent;
 	color: black;
 	/*border-color: transparent;*/
 	border-style: none;
 }
 .container{
-	background-color:transparent;
-	color: black;
+	background-color:lightgrey;
+	width: 600px;
 	
 }
-
-.btn {
-  display: inline-grid;
-  
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  
-  
-}
-=======
-	color :darkblue;
+#home{
+	width: 1500px;
 	background-color: white;
 }
-.container{
-	background-color:darkgrey;
-	width:600px;
+.btn {
+	text-align: center;
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: gray;
+	background-color: #4CAF50;
+	border: none;
+	box-shadow: 0 9px #999;
+}
 
+.btn:hover {background-color:#45B39D}
+
+.btn:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 
 }
+
+
+
 #login{
-	background-color:darkgrey;
+	background-color:lightgray;
 	width:600px;
 	height: 350px;
 }
 
-body{
+body {
 	background-size: cover;
 	background-image: url("../images/background2.jpg");
->>>>>>> c16006693b006ace7b2664178192bc56d5b26a40
-
-button{
-	font-weight: bold;
-	text-align: center;
-
-<<<<<<< HEAD
-	text-decoration-color: grey;
-	border-color: lightblue;
-	white-space: nowrap;
-	vertical-align: middle;
 }
-=======
 
-}
->>>>>>> c16006693b006ace7b2664178192bc56d5b26a40
+
+
+
+
+

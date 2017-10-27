@@ -1,6 +1,6 @@
 <?php include 'HnF/header.php' ?>
 
-	<div class="container">
+	<div class="container" id="home">
 		<center>
 			<!--h1 align="left">
 

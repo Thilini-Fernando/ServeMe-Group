@@ -14,7 +14,7 @@
 
 		<?php echo form_open('LogAdmnCont/logAdmn'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
+			<div class="col-sm-6 col-sm-offset-3">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>

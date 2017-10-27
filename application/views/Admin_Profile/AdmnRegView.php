@@ -15,7 +15,7 @@
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('RegAdminCont/regAdmin'); ?>
 
-			<div class="col-sm-6 col-sm-offset-3" style="background-color: orange">
+			<div class="col-sm-6 col-sm-offset-3">
 
 				<div class="form-group">
 				    <label for="exampleInputEmail1">First name</label>
